@@ -15,6 +15,7 @@ const float toRadians = 3.14159265f / 180.0f;
 
 std::vector<Mesh*> meshList;
 std::vector<Shader> shaderList;
+Window mainWindow = Window(800, 600);
 
 static const std::string vShader = "Shaders/shader.vert.txt";
 static const std::string fShader = "Shaders/shader.frag.txt";
@@ -53,8 +54,6 @@ void CreateObjects() {
 
 int main()
 {
-
-	Window mainWindow = Window(800, 600);
 	mainWindow.Initialise();
 
 	CreateObjects();
