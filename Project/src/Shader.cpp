@@ -56,6 +56,11 @@ unsigned int Shader::GetModelLocation() const
 	return uniformModel;
 }
 
+unsigned int Shader::GetViewLocation() const
+{
+	return uniformView;
+}
+
 void Shader::UseShader()
 {
 	glUseProgram(shaderID);
@@ -107,6 +112,7 @@ void Shader::CompileShader(const std::string& vertexCode, const std::string& fra
 
 	uniformModel = glGetUniformLocation(shaderID, "model");
 	uniformProjection = glGetUniformLocation(shaderID, "projection");
+	uniformView = glGetUniformLocation(shaderID, "view");
 }
 
 void Shader::AddShader(const char* shaderCode, GLenum shaderType)
