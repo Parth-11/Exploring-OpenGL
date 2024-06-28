@@ -23,8 +23,10 @@
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Mesh.cpp" />
     <ClCompile Include="src\Shader.cpp" />
+    <ClCompile Include="src\Texture.cpp" />
     <ClCompile Include="src\vendor\glm\detail\glm.cpp" />
     <ClCompile Include="src\vendor\glm\glm.cppm" />
+    <ClCompile Include="src\vendor\stb_image\stb_image.cpp" />
     <ClCompile Include="src\WIndow.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -172,6 +174,7 @@
     <ClInclude Include="src\Camera.h" />
     <ClInclude Include="src\Mesh.h" />
     <ClInclude Include="src\Shader.h" />
+    <ClInclude Include="src\Texture.h" />
     <ClInclude Include="src\vendor\glm\common.hpp" />
     <ClInclude Include="src\vendor\glm\detail\compute_common.hpp" />
     <ClInclude Include="src\vendor\glm\detail\compute_vector_decl.hpp" />
@@ -460,11 +463,16 @@
     <ClInclude Include="src\vendor\glm\vec3.hpp" />
     <ClInclude Include="src\vendor\glm\vec4.hpp" />
     <ClInclude Include="src\vendor\glm\vector_relational.hpp" />
+    <ClInclude Include="src\vendor\stb_image\stb_image.h" />
     <ClInclude Include="src\Window.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Shaders\shader.frag.txt" />
     <Text Include="Shaders\shader.vert.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Textures\brick.png" />
+    <Image Include="Textures\dirt.png" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
