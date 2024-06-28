@@ -9,6 +9,8 @@
 class Shader {
 private:
 	unsigned int shaderID, uniformProjection, uniformModel,uniformView;
+	unsigned int uniformAmbientIntenstiy, uniformAmbientColour;
+	unsigned int uniformDiffuseIntensity, uniformDirection;
 public:
 	Shader();
 	~Shader();
@@ -22,6 +24,10 @@ public:
 	unsigned int GetProjectionLocation() const;
 	unsigned int GetModelLocation() const;
 	unsigned int GetViewLocation() const;
+	unsigned int GetAmbientIntensityLocation() const;
+	unsigned int GetAmbientColourLocation() const;
+	unsigned int GetDiffuseIntensityLocation() const;
+	unsigned int GetDirectionLocation() const;
 
 	void UseShader();
 	void ClearShader();
